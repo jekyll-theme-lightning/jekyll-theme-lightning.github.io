@@ -4,4 +4,4 @@ navigation:
 text:
   showDate: false
 footer:
-  copyright: "&copy; 2018. <a href=\"mailto:paikwiki@gmail.com\">paikwiki</a>. This website is made with Lighting theme. Feel free to use it under the <a href=\"https://www.olis.or.kr/license/Detailselect.do?lId=1006&mapCode=010006\">MIT license</a>."
+  copyright: "&copy; 2018. <a href=\"mailto:paikwiki@gmail.com\">paikwiki</a>.<br/>This website is made with Lighting theme.<br/> Feel free to use it under the <a href=\"https://www.olis.or.kr/license/Detailselect.do?lId=1006&mapCode=010006\">MIT license</a>."
