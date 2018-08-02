@@ -1,0 +1,11 @@
+items:
+  - title: welcome
+    url: /
+  - title: quickstart
+    url: /quickstart
+  - title: docs
+    url: /docs
+  - title: Built with ⚡️
+    url: /companions
+  - title: support
+    url: /support

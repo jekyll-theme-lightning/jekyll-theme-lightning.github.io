@@ -1,0 +1,180 @@
+@import "syntax.css";
+
+.highlighter-rouge {
+  padding: 0.12rem 0.4rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.4rem;
+  -webkit-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.8);
+    -moz-box-shadow: inset 0 1px 10px rgba(0,0,0,0.3),0 1px 0 rgba(255,255,255,0.1),0 -1px 0 rgba(0,0,0,0.8);
+    box-shadow: inset 0 1px 10px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.1), 0 -1px 0 rgba(0,0,0,0.8);
+}
+div.highlighter-rouge {
+  margin-bottom: 2rem;  
+  margin-left: 1rem;
+  padding: 0.2rem 0.8rem;
+  overflow: auto;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+.highlighter-rouge pre,
+.highlighter-rouge code {
+  font-family: Menlo, Consolas, "Courier New", Courier, monospace;
+}
+table {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  padding: 0;
+  max-width: 100%;
+  font-size: 0.92rem;
+  border-spacing: 0;
+  line-height: 1.4;
+  overflow: auto;
+  color: indigo;
+  box-sizing: border-box;
+}
+table thead tr th,
+table tbody tr td {
+  min-width: 4rem;
+  border-bottom: 0.12rem solid indigo;
+  border-right: 0.12rem dotted indigo;
+}
+table tbody tr td:last-child {
+  border-right: 0;
+}
+table thead tr th {
+  background-color: lightgray;
+  border-bottom: 0.18rem solid indigo;
+}
+table thead tr th:first-child {
+  border-radius: 0.6rem 0 0 0;
+}
+table thead tr th:last-child {
+  border-radius: 0 0.6rem 0 0;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 0.6rem;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 0.6rem 0;
+}
+table th,
+table td {
+  padding: 0.4rem 1rem;
+  background-color: white;
+}
+html {
+  font-size: 1.2rem;
+}
+body {
+  background-color: indigo;
+  color: white;
+}
+h1, p, span, pre, a, blockquote, li {
+  color: white;
+}
+h2,
+h3 {
+  color: white;
+}
+.global-wrapper .site-header .tagline,
+.global-wrapper .site-footer .copyright,
+.global-wrapper .site-footer .copyright a {
+  color: goldenrod;
+}
+.site-header {
+  font-size: 1.2em;
+}
+img[alt="main image"] {
+  display: block;
+  margin: 0 auto;
+  max-width: 480px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.global-wrapper .page-main {
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 760px;
+}
+.page-main h1 {
+  text-align: center;
+}
+.page-main a,
+.page-quickstart a,
+.page-support a,
+.docs-wrapper .post-content a {
+  text-decoration: underline;
+}
+.site-content header h1 {
+  font-size: 1.6em;
+}
+.site-content .text-content ul li,
+.site-content .page-content ul li {
+  margin-left: 2rem;
+  line-height: 1.6;
+  list-style: square;
+}
+.site-content h2 {
+  margin-top: 2.6rem;
+  margin-left: -0.6rem;
+  padding-left: 0.36rem;
+  border-left: 0.24rem solid goldenrod;
+  font-size: 1.4em;
+}
+.site-content h3 {
+  font-size: 1.2em;
+  margin-top: 1.8rem;
+}
+.site-content h3::before {
+  margin-right: 0;
+  content: "";
+}
+.site-content p {
+  letter-spacing: 0.04rem;
+  word-spacing: 0.12rem;
+}
+.site-content blockquote {
+  font-style: italic;
+}
+.global-wrapper .site-content .posts-content .artworks-list li {
+  width: 31.3%;
+}
+.global-wrapper .site-content .posts-content .artworks-list li a .thumb-image {
+  width: 100%;
+  height: 200px;
+}
+@media (max-width: 640px) {
+  img[alt="main image"] {
+    max-width: 100%;
+  }
+  div.highlighter-rouge,
+  table {
+    margin-left: 0;
+  }
+  table {
+    display: -webkit-box;
+  }
+  html {
+    font-size: 1rem;
+  }
+  .global-wrapper {
+    padding: 1rem 1.2rem;
+  }
+  .site-header {
+    font-size: 1.2em;
+  }
+  .site-content h2 {
+    font-size: 1.2em;
+  }
+  .site-content h3 {
+    font-size: 1.12em;
+  }
+  .site-content p {
+    letter-spacing: 0.02rem;
+    word-spacing: 0.12rem;
+    text-indent: 0;
+  }
+  .site-content blockquote {
+    margin: 0.2rem 0.8rem;
+  }
+}

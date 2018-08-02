@@ -1,0 +1,10 @@
+title: "LIGHTNING⚡️"
+description: Jekyll theme for art portfolio website.
+permalink: none
+remote_theme: jekyll-theme-lightning/lightning
+plugins:
+  - github-pages
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+  - jemoji
+  - rouge
