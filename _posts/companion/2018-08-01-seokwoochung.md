@@ -1,7 +1,7 @@
 ---
 layout: artwork
 categories: companion
-title: 정석우
+title: Seokwoo Chung
 image: assets/images/companions/seokwoochung.jpg
 thumb: assets/images/companions/seokwoochung.jpg
 ---
