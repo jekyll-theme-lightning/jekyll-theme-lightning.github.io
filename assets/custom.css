@@ -16,9 +16,11 @@ div.highlighter-rouge {
   font-size: 0.92rem;
   line-height: 1.4;
 }
+.highlighter-rouge,
 .highlighter-rouge pre,
 .highlighter-rouge code {
   font-family: Menlo, Consolas, "Courier New", Courier, monospace;
+  color: white;
 }
 table {
   margin-bottom: 2rem;
