@@ -51,8 +51,8 @@ jekyll 3.8.3
 ## 새로운 프로젝트로 시작하기
 
 ````sh
-$ mkdir YOUR_WEBSITE
-$ cd YOUR_WEBSITE
+$ mkdir YOUR-WEBSITE
+$ cd YOUR-WEBSITE
 ````
 
 필요한 파일 목록입니다.
@@ -64,9 +64,168 @@ $ cd YOUR_WEBSITE
 │   ├─ author.yml
 │   ├─ navigation.yml
 │   └─ settings.yml
+├─ _posts
+│   ├─ artworks
+│   │   ├─ 2018-08-06-ARTWORK-TITLE.md
+│   │   └─ 2018-08-06-ANOTHER-ARTWORK-TITLE.md
+│   └─ texts
+│       ├─ 2018-08-06-TEXT-TITLE.md
+│       └─ 2018-08-06-ANOTHER-TEXT-TITLE.md
+├─ assets
+│   └─ images
+│       └─ artworks
+│           ├─ ARTWORK-IMAGE.jpg
+│           └─ ANOTHER-ARTWORK-IMAGE.jpg
 ├─ _config.yml
+├─ Gemfile
 ├─ index.md
-└─ Gemfile
+├─ texts.md
+├─ cv.md
+└─ .gitignore
+
+````
+
+`Gemfile`
+
+````sh
+source "https://rubygems.org"
+
+group :jekyll_plugins do
+  gem "jekyll-seo-tag"
+  gem "jekyll-feed"
+  gem "jekyll-remote-theme"
+end
+
+````
+
+`Gemfile`을 작성한 후 `bundle install` 명령으로 실행에 필요한 젬을 설치합니다.
+
+````sh
+$ bundle install
+Fetching gem metadata from https://rubygems.org/................
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Using public_suffix 3.0.2
+Using addressable 2.5.2
+Using bundler 1.16.3
+Using colorator 1.1.0
+Using concurrent-ruby 1.0.5
+Using eventmachine 1.2.7
+Using http_parser.rb 0.6.0
+Using em-websocket 0.5.1
+Using ffi 1.9.25
+Using forwardable-extended 2.6.0
+.
+.
+.
+Using jekyll-remote-theme 0.3.1
+Using jekyll-seo-tag 2.5.0
+Bundle complete! 3 Gemfile dependencies, 30 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+
+````
+
+`_config.yml`
+
+````yml
+title: PORTFOLIO-TITLE
+description: PORTFOLIO-DESCRIPTION
+permalink: none
+remote_theme: jekyll-theme-lightning/lightning
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+````
+
+`_data/author.yml`
+
+````yml
+name: paikwiki
+email: paikwiki@gmail.com
+description: Geek with the keys
+copyright_year: 2018
+exhibitions:
+  -
+    title: Solo Exhibition
+    list:
+      - 2018 the 2nd Solo Exhibition @Somewhere
+      - 2018 the 1st Solo Exhibition @Somewhere
+  -
+    title: Group Exhibition
+    list:
+      - 2018 the 2nd Exhibition @Somewhere
+      - 2018 the 1st Exhibition @Somewhere
+
+````
+
+`_data/navigation.yml`
+
+````yml
+items:
+  - title: artwork
+    url: /
+  - title: text
+    url: /texts
+  - title: cv
+    url: /cv
+````
+
+`_data/settings.yml`
+
+````yml
+locale: ~
+navigation:
+  uppercase: true
+text:
+  showDate: false
+footer:
+  copyright: ~
+````
+
+`index.md`
+
+````md
+---
+layout: artworks
+title: ARTWORK-PAGE-TITLE
+item: artwork
+permalink: /
+navItemTitle: artwork
+og:
+  title: ARTWORK-PAGE-TITLE
+  description: PAGE-DESCRIPTION
+  image: ~
+  card: summary_large_image
+---
+
+````
+
+`texts.md`
+
+````md
+---
+layout: texts
+title: TEXT-PAGE-TITLE
+item: text
+permalink: /texts
+navItemTitle: text
+og:
+  title: TEXT-PAGE-TITLE
+  description: PAGE-DESCRIPTION
+  image: ~
+  card: summary_large_image
+---
+
+````
+
+`.gitignore`
+
+````sh
+Gemfile.lock
+_site
+.sass-cache
+
 ````
 
 ## 데모 웹사이트 가져와서 시작하기
@@ -74,8 +233,8 @@ $ cd YOUR_WEBSITE
 데모 웹사이트를 가져와서 시작할 수 있습니다.
 
 ```sh
-$ git clone DEMO_WEBSITE_GIT_REPOSITORY
-$ cd DEMO_WEBSITE
+$ git clone DEMO-WEBSITE-GIT-REPOSITORY
+$ cd DEMO-WEBSITE
 ````
 
 다운받은 폴더를 코드에디터에서 열어 수정합니다. 먼저 `_config.yml`에서 웹사이트의 환경세팅을 수정합니다.
