@@ -219,6 +219,23 @@ og:
 
 ````
 
+`cv.md`
+
+````md
+---
+layout: cv
+title: CV
+permalink: /cv
+navItemTitle: cv
+og:
+  title: CV - ARTIST-NAME
+  description: PAGE-DESCRIPTION
+  image: ~
+  card: summary_large_image
+---
+
+````
+
 `.gitignore`
 
 ````sh
