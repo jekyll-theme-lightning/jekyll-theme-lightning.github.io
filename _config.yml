@@ -1,6 +1,7 @@
 title: "LIGHTNING⚡️"
 description: Jekyll theme for art portfolio website.
 permalink: none
+encoding: utf-8
 remote_theme: jekyll-theme-lightning/lightning
 plugins:
   - github-pages
