@@ -132,10 +132,6 @@ title: PORTFOLIO-TITLE
 description: PORTFOLIO-DESCRIPTION
 permalink: none
 remote_theme: jekyll-theme-lightning/lightning
-plugins:
-  - jekyll-seo-tag
-  - jekyll-feed
-
 ````
 
 `_data/author.yml`
